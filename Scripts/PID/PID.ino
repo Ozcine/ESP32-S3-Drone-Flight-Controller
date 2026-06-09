@@ -52,7 +52,7 @@ void setup() {
     while (1) yield();
   }
   
-  // O meşhur titreşim önleyici filtre!
+  // titreşim önleyici filtre!
   mpu.setFilterBandwidth(MPU6050_BAND_21_HZ); 
 
   // Motorları Başlat ve Sıfır Gaz Gönder
@@ -82,7 +82,7 @@ void loop() {
   float hedef_roll = map(kumanda_roll, 1000, 2000, -30, 30);
   float hedef_pitch = map(kumanda_pitch, 1000, 2000, -30, 30); // İleri itince negatif değer verebilir, yönüne göre tersine çevirebiliriz.
 
-  // --- 2. SENSÖRÜ OKU (Gerçekte Ne Oluyor?) ---
+  // --- 2. SENSÖRÜ OKU  ---
   sensors_event_t a, g, temp;
   mpu.getEvent(&a, &g, &temp);
   
