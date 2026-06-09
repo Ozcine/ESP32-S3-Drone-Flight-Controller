@@ -1,6 +1,6 @@
-// Kumanda (CRSF) YOK, Sensör (MPU) YOK. Sadece donanımsal Motor Sürüşü!
+//  Sadece donanımsal Motor Sürüşü!
 
-// Senin PCB'deki Motor Çıkışları: U2(D0), U3(D1), U4(D2), U5(D3)
+//  U2(D0), U3(D1), U4(D2), U5(D3)
 const int motorPins[4] = {D0, D1, D2, D3};
 
 // Donanımsal PWM Fonksiyonumuz (Kütüphanesiz)
